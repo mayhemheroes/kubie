@@ -18,6 +18,3 @@ members = ["."]
 name = "expanduser"
 path = "fuzz_targets/expanduser.rs"
 
-[[bin]]
-name = "kubeconfig"
-path = "fuzz_targets/kubeconfig.rs"

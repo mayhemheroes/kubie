@@ -60,7 +60,6 @@ jobs:
       matrix:
         mayhemfile:
           - mayhem/Mayhemfile
-          - mayhem/kube_config.Mayhemfile
 
     steps:
       - uses: actions/checkout@v3

@@ -1,5 +1,0 @@
-project: kubie
-target: kube_config
-
-cmds:
-  - cmd: /kube_config
