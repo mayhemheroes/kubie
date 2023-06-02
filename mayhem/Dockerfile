@@ -17,3 +17,4 @@ RUN cd ./fuzz && cargo +nightly hfuzz build
 FROM ubuntu:20.04
 
 COPY --from=builder kubie/fuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/expanduser /
+COPY --from=builder kubie/fuzz/hfuzz_target/x86_64-unknown-linux-gnu/release/kube_config /
