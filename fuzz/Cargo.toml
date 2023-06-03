@@ -1,0 +1,20 @@
+[package]
+name = "kubie-fuzz"
+version = "0.0.0"
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+kubie = { path = ".." }
+honggfuzz = "0.5.55"
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "expanduser"
+path = "fuzz_targets/expanduser.rs"
+
